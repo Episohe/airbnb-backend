@@ -3,7 +3,6 @@ from core.models import CoreModel
 
 
 class Room(CoreModel):
-
     name = models.CharField(max_length=140)
     address = models.CharField(max_length=140)
     price = models.IntegerField(help_text="USD per night")
@@ -27,9 +26,11 @@ class Room(CoreModel):
 
     photo_number.short_description = "Photo Count"
 
+    class Meta:
+        ordering = ["pk"]
+
 
 class Photo(CoreModel):
-
     file = models.ImageField()
     room = models.ForeignKey(
         "rooms.Room", related_name="photos", on_delete=models.CASCADE,
