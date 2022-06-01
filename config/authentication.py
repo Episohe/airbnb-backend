@@ -6,6 +6,7 @@ from rest_framework import exceptions
 from config import settings
 
 
+# JWT
 class JWTAuthentication(authentication.BaseAuthentication):
     def authenticate(self, request):
         try:
@@ -14,7 +15,6 @@ class JWTAuthentication(authentication.BaseAuthentication):
                 return None
             xjwt, jwt_token = token.split(" ")
             decoded = jwt.decode(jwt_token, settings.SECRET_KEY, algorithms=["HS256"])
-            print(token)
             pk = decoded.get("pk")
             user = User.objects.get(pk=pk)
         except (ValueError, User.DoesNotExist):
