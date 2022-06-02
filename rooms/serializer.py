@@ -23,6 +23,14 @@ class RoomSerializer(serializers.ModelSerializer):
                 raise serializers.ValidationError("Not enough time between changes")
         return data
 
+    def get_is_fav(self, obj):
+        request = self.context.get("request")
+        if request:
+            user = request.user
+            if user.is_authenticated:
+                return obj in user.favs.all()
+        return False
+
     def update(self, instance, validated_data):
         instance.name = validated_data.get("name", instance.name)
         instance.address = validated_data.get("address", instance.address)
