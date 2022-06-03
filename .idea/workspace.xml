@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="619e6a34-3da5-4e57-bfba-d58405c662eb" name="Changes" comment=":coffin: Remove code">
-      <change beforePath="$PROJECT_DIR$/.idea/airbnb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/airbnb.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="1b504bbc-6d97-41e4-aad4-aa28f420c719" name="Changes" comment=":sparkles: search API =&gt;2.16">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rooms/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/rooms/serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rooms/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/rooms/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,10 +31,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="dbe6d31c-af99-4cce-8ca4-d0792c836bee" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/venv/lib/python3.10/site-packages/django/urls/conf.py" root0="SKIP_INSPECTION" />
+    <option name="defaultAccountId" value="64d7e60e-888e-4308-875e-8ab7332cfea5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -43,24 +40,23 @@
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="29uCkzc2viRX2UXw1MACedx5iqt" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/maybe/OneDrive/바탕 화면/sc/workspace/airbnb-backend",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/maybe/OneDrive/바탕 화면/sc/workspace/airbnb-backend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Python&quot;
   }
-}]]></component>
+}</component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
       <console-settings module-name="airbnb" is-module-sdk="true">
@@ -106,7 +102,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1653953730476</updated>
-      <workItem from="1653953731720" duration="20782000" />
+      <workItem from="1653953731720" duration="21144000" />
+      <workItem from="1654126047155" duration="8750000" />
     </task>
     <task id="LOCAL-00001" summary=":zap: MeView =&gt;2.7">
       <created>1653958007055</created>
@@ -115,12 +112,12 @@
       <option name="project" value="LOCAL" />
       <updated>1653958007055</updated>
     </task>
-    <task id="LOCAL-00002" summary=":coffin: Remove code">
-      <created>1654093103778</created>
+    <task id="LOCAL-00002" summary=":sparkles: search API =&gt;2.16">
+      <created>1653983598705</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1654093103778</updated>
+      <updated>1653983598705</updated>
     </task>
     <option name="localTasksCounter" value="3" />
     <servers />
@@ -141,11 +138,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value=":zap: MeView =&gt;2.7" />
-    <MESSAGE value=":coffin: Remove code" />
-    <option name="LAST_COMMIT_MESSAGE" value=":coffin: Remove code" />
+    <MESSAGE value=":sparkles: search API =&gt;2.16" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: search API =&gt;2.16" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/airbnb$mega_seed.coverage" NAME="mega_seed Coverage Results" MODIFIED="1653571449184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/management/commands" />
     <SUITE FILE_PATH="coverage/airbnb_backend$authentication.coverage" NAME="authentication Coverage Results" MODIFIED="1653979397027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/config" />
   </component>
 </project>
