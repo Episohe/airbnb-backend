@@ -9,7 +9,7 @@ from rest_framework.views import APIView
 from rest_framework.permissions import IsAuthenticated
 
 from rooms.models import Room
-from rooms.serializer import RoomSerializer
+from rooms.serializers import RoomSerializer
 from users.models import User
 from users.serializers import *
 
