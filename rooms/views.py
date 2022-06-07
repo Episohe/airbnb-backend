@@ -1,5 +1,5 @@
 from rest_framework import permissions
-from rest_framework.decorators import api_view
+from rest_framework.decorators import action
 from rest_framework.viewsets import ModelViewSet
 
 from .models import Room
@@ -21,8 +21,8 @@ class RoomViewSet(ModelViewSet):
         return [permission() for permission in permission_classes]
 
 
-@api_view(["GET"])
-def room_search(request):
+@action(detail=False)
+def search(self, request):
     max_price = request.GET.get("max_price", None)
     min_price = request.GET.get("min_price", None)
     beds = request.GET.get("beds", None)
@@ -41,7 +41,7 @@ def room_search(request):
         filter_kwargs["bedrooms__gte"] = bedrooms
     if bathrooms is not None:
         filter_kwargs["bathrooms__gte"] = bathrooms
-    paginator = OwnPagination()
+    paginator = self.paginator
     if lat is not None and lng is not None:
         filter_kwargs["lat__gte"] = float(lat) - 0.005
         filter_kwargs["lat__lte"] = float(lat) + 0.005
